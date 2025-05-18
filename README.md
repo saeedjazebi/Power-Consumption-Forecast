@@ -43,7 +43,7 @@ Four different general models are used in this project:
 ### 1- Predictive Regression: 
 Predict power consumption for three different regions based on Temperature, Humidity, WindSpeed, GeneralDiffuseFlows, and DiffuseFlows. For this method, the time component could be dropped from the data.
 Used Sequential Feature Selection (SFS) method to identify which parameters are most important and critical to predict power consumption in Zone 1, 2, and 3. The Temperature, Humidity, and WindSpeed seem to be the most critical features. Hence, I used these three features as input variables.
-Tested both Ridge and Lasso regressions. Used GridSearchCV to optimize both. Used the root mean square error and the r2 score to assess the performance of the regression models. The Ridge regression is more accurate.
+Tested both Ridge and Lasso regressions. Used GridSearchCV to optimize both. Used the root mean square error to assess the performance of the regression models. The Ridge regression is more accurate.
 - Lasso Testing RMSE: 0.8825
 - Ridge Testing RMSE: 0.8616\
 Also, Lasso revealed that for each zone different combinations of features provide the best performance, by selecting those features: 
