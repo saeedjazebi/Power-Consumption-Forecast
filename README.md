@@ -16,8 +16,8 @@
 6.	End consumers - Lower bills and improved service reliability
 
 ## Useful Links
-Link to Jupyter Notebook: https://github.com/saeedjazebi/Power-Consumption-Forecast/blob/main/CapstoneFinal.ipynb
-Data Source: https://www.kaggle.com/datasets/fedesoriano/electric-power-consumption
+- Link to Jupyter Notebook: https://github.com/saeedjazebi/Power-Consumption-Forecast/blob/main/CapstoneFinal.ipynb
+- Data Source: https://www.kaggle.com/datasets/fedesoriano/electric-power-consumption
 ## Data Description
 This project develops a predictive model for power consumption based on time series weather data (temperature, humidity, wind speed, and diffuse flow). The data is collected from Supervisory Control and Data Acquisition System (SCADA) of Amendis which is a public service utility provider and in charge of the distribution of water and electricity since 2002, in Morocco. The dataset is exhaustive in its demonstration of energy consumption of the Tétouan city in Morocco. The city is fed by three main distribution substations, that each serve a particular zone, namely: Quads, Smir, and Boussafou. The objective is to predict energy consumption in advance to inform electricity prices in a dynamic electricity market. This data could also be used to support data-driven decision making.
 Data Set Description The data consists of 52,416 observations of energy consumption on 10-minute intervals (6 samples per hour). Every observation is described by 9 feature columns. The data is collected for a full year.
