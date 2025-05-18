@@ -45,8 +45,8 @@ Predict power consumption for three different regions based on Temperature, Humi
 Used Sequential Feature Selection (SFS) method to identify which parameters are most important and critical to predict power consumption in Zone 1, 2, and 3. The Temperature, Humidity, and WindSpeed seem to be the most critical features. Hence, I used these three features as input variables.
 Tested both Ridge and Lasso regressions. Used GridSearchCV to optimize both. Used the root mean square error and the r2 score to assess the performance of the regression models. The Ridge regression is more accurate.
 - Lasso Testing RMSE: 0.8825
-- Ridge Testing RMSE: 0.8616
-<br />Also, Lasso revealed that for each zone different combinations of features provide the best performance, by selecting those features: 
+- Ridge Testing RMSE: 0.8616\
+Also, Lasso revealed that for each zone different combinations of features provide the best performance, by selecting those features: 
 - Zone 1 ---> Temperature // TemperatureHumidity // Humidity^2 
 - Zone 2 ---> Temperature // TemperatureWindSpeed // Humidity^2 
 - Zone 3 ---> Temperature^2 // Temperature*WindSpeed
