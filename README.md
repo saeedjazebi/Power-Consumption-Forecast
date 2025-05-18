@@ -105,9 +105,9 @@ Fitting 2 folds for each of 12 candidates, totaling 24 fits, the best hyperparam
 			
 
 ## Next Steps, Future Work, and Recommendations:
-- The time component was not considered as an input variable for our Neural network Model. Considering time as input variable could increase the model’s accuracy. For this reason, the Datetime variable should be broken down into multiple features, such as hour, minute, day of the week, quarter, month, day, year, season, day of the month, day of the year, etc. This will increase the model’s power to more accurately predict the power consumption, because different days of the week or different months of the year would change the pattern of consumption. For examples, there could be another feature called “holiday”, or a variable that indicates if it is “weekday” or “weekend”.
+- The time component was not considered as an input variable for our Neural network Models. Considering time as input variable could increase the model’s accuracy. For this reason, the Datetime variable should be broken down into multiple features, such as hour, minute, day of the week, quarter, month, day, year, season, day of the month, day of the year, etc. This will increase the model’s power to more accurately predict the power consumption, because different days of the week or different months of the year have direct effect on the pattern of consumption. For examples, there could be another feature called “holiday”, or a variable that indicates if it is “weekday” or “weekend”.
 
-- For time-series analysis the models are trained and tested only for Zone 1 power consumption. The same models could be applied to Zone 2 and 3 to test the accuracy.
+- For time-series analysis, the models are trained and tested only for Zone 1 power consumption. The same models could be applied to Zone 2 and 3 to test the accuracy.
 
 - Models could be built based on three zones power consumption simultaneously and it may increase models’ accuracy, because more data will be used to train the models.   
 
