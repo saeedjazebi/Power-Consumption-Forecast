@@ -1,18 +1,20 @@
 # Power-Consumption-Forecast
 ## The main objective of this project is to develop a predictive model for power consumption based on time series data.
 ### A predictive model for power consumption offers several significant advantages across multiple sectors, specifically for Utilities and Grid Operators:
-•	Infrastructure planning - Make informed decisions about when and where to expand capacity
-•	Load balancing and optimal operation - Better distribution of electricity across the grid, reducing strain and preventing outages
-•	Demand forecasting - Accurately predict peak demand periods to optimize generation capacity
-•	Resource optimization - Schedule maintenance during predicted low-demand periods
-•	Renewable integration - Better manage the intermittent nature of renewable energy sources
+1.	Infrastructure planning - Make informed decisions about when and where to expand capacity
+2.	Load balancing and optimal operation - Better distribution of electricity across the grid, reducing strain and preventing outages
+3.	Demand forecasting - Accurately predict peak demand periods to optimize generation capacity
+4.	Resource optimization - Schedule maintenance during predicted low-demand periods
+5.	Renewable integration - Better manage the intermittent nature of renewable energy sources
+
 ### The main beneficiaries of such models could be the following:
-•	Utility companies - Improved grid management, reduced costs, better service reliability
-•	Energy-intensive industries (manufacturing, data centers, etc.) - Significant cost savings and operational improvements
-•	Commercial real estate - Better building management and reduced operating expenses
-•	Governments and municipalities - Improved public infrastructure management
-•	Renewable energy providers - Better integration with traditional power sources
-•	End consumers - Lower bills and improved service reliability
+1.	Utility companies - Improved grid management, reduced costs, better service reliability
+2.	Energy-intensive industries (manufacturing, data centers, etc.) - Significant cost savings and operational improvements
+3.	Commercial real estate - Better building management and reduced operating expenses
+4.	Governments and municipalities - Improved public infrastructure management
+5.	Renewable energy providers - Better integration with traditional power sources
+6.	End consumers - Lower bills and improved service reliability
+
 ## Useful Links
 Link to Jupyter Notebook: https://github.com/saeedjazebi/Power-Consumption-Forecast/blob/main/CapstoneFinal.ipynb
 Data Source: https://www.kaggle.com/datasets/fedesoriano/electric-power-consumption
