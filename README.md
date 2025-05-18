@@ -94,14 +94,14 @@ The table below compares the performance of all time-series models. The test dat
 Fitting 2 folds for each of 12 candidates, totaling 24 fits, the best hyperparameters: 200 layers and learning rate of 0.001.
 
 ### Performance Comparison of Time-Series Models
-ARIMA RMSE: 2211,	
-SARIMA RMSE: 2234,	
-Prophet RMSE: 2470,	
-ANN RMSE: 9555,	
-Simple-RNN RMSE:1363,	
-LSTM-1 RMSE: 1352,	
-LSTM2 RMSE: 1378,	
-LSTM3 RMSE: 860
+- ARIMA RMSE: 2211	
+- SARIMA RMSE: 2234	
+- Prophet RMSE: 2470	
+- ANN RMSE: 9555
+- Simple-RNN RMSE:1363
+- LSTM-1 RMSE: 1352	
+- LSTM2 RMSE: 1378	
+ LSTM3 RMSE: 860
 			
 
 ## Next Steps, Future Work, and Recommendations:
