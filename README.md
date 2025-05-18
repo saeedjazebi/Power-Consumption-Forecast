@@ -99,9 +99,9 @@ Fitting 2 folds for each of 12 candidates, totaling 24 fits, the best hyperparam
 - Prophet RMSE: 2470	
 - ANN RMSE: 9555
 - Simple-RNN RMSE:1363
-- LSTM-1 RMSE: 1352	
-- LSTM2 RMSE: 1378	
-- LSTM3 RMSE: 860
+- LSTM 1 RMSE: 1352	
+- LSTM 2 RMSE: 1378	
+- LSTM 3 RMSE: 860
 			
 
 ## Next Steps, Future Work, and Recommendations:
