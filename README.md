@@ -50,12 +50,12 @@ Zone 3 ---> Temperature^2 // Temperature*WindSpeed
 For the time series, i focused on Zone 1 power prediction only. However, it is easy to extend it to the other zones to predict their power consumption. 
 Zone 1 power consumption is first decomposed into Trend, Seasonal, and residual components, with period = 24 hours, which means 144 samples (24 hours * 6 sample per hour).
 Applied the AD-Fuller algorithm to the residual component. The Time series is stationary based on the Augmented Dickey-Fuller (ADF) test results. The key indicators showing stationarity are:
-1.	ADF Statistic: -35.675345 
-2.	p-value: 0.000000 (essentially zero) 
+1.	ADF Statistic: -35.675345. 
+2.	p-value: 0.000000 (essentially zero).
 3.	Critical Values: 
-o	1%: -3.430
-o	5%: -2.862
-o	10%: -2.567
+o	1%: -3.430.
+o	5%: -2.862.
+o	10%: -2.567.
 The ADF statistic (-35.67) is significantly more negative than even the 1% critical value (-3.43), indicating strong evidence to reject the null hypothesis of a unit root. The extremely low p-value (0.000000) further confirms this conclusion, meaning there's overwhelming statistical evidence that your time series is stationary.
 The Trend and Seasonal components are assumed to follow the same behavior. As such, the residual component is modelled with ARIMA and SARIMA models and then the predicted residual is added to the Trend and Seasonal components to reconstruct the temperature time series data. This data is then used to compare against the actual data for accuracy.  
 After training the ARIMA and SARIMA models, the results were checked against the real data. 
