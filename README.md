@@ -86,6 +86,7 @@ The simple LSTM method seems to work better for the purpose of Method 1. Therefo
 In previous sections, it was discovered that the most important variable affecting the power prediction was the temperature. Here we assume that for a practical application, we have a proper prediction of temperature for the next 24 hours. Also, we have temperature measurements for the last 24 hours. We also have measured power consumption in the last 24 hours. Hence, we used those known variables as input and predicted the next 24 hours power consumption. 
 The input and output variables have different dimensions; therefore, two different functions are written to produce the required moving window of data. The length of windows is kept at 144 sample points. 
 #### a)	LSTM 2
+A new LSTM model is trained in this section. The RMSE after 20 epochs is 1378. 
 The LSTM seems to be the most promising method to predict power consumption. As such, to make sure that we have a well-tuned model, in the next section hyperparameter tuning is performed to adjust the model. 
 #### b)	 LSTM 3: Hyperparameter tuning on LSTM
 The hyper parameter tuning is performed for the number of LSTM layers and the learning rate. The rest of the parameters are kept constant. 
