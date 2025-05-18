@@ -35,10 +35,10 @@ Exploratory Data Analysis (EDA) started with importing the required libraries. R
 
 ## Modeling
 Four different general models are used in this project: 
-1-	Predictive Regression 
-2-	Time-series Autoregression, ARIMA method 
-3-	Facebook Prophet Model 
-4-	Deep learning with Neural Networks.
+1.	Predictive Regression 
+2.	Time-series Autoregression, ARIMA method 
+3.	Facebook Prophet Model 
+4.	Deep learning with Neural Networks.
 
 ### 1- Predictive Regression: 
 Predict power consumption for three different regions based on Temperature, Humidity, WindSpeed, GeneralDiffuseFlows, and DiffuseFlows. For this method, the time component could be dropped from the data.
