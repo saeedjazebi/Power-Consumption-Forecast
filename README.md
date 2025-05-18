@@ -101,7 +101,7 @@ Fitting 2 folds for each of 12 candidates, totaling 24 fits, the best hyperparam
 - Simple-RNN RMSE:1363
 - LSTM-1 RMSE: 1352	
 - LSTM2 RMSE: 1378	
- LSTM3 RMSE: 860
+- LSTM3 RMSE: 860
 			
 
 ## Next Steps, Future Work, and Recommendations:
