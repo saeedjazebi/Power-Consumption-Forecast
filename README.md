@@ -46,7 +46,7 @@ Used Sequential Feature Selection (SFS) method to identify which parameters are 
 Tested both Ridge and Lasso regressions. Used GridSearchCV to optimize both. Used the root mean square error and the r2 score to assess the performance of the regression models. The Ridge regression is more accurate.
 - Lasso Testing RMSE: 0.8825
 - Ridge Testing RMSE: 0.8616
-<br /> Also, Lasso revealed that for each zone different combinations of features provide the best performance, by selecting those features: 
+<br />Also, Lasso revealed that for each zone different combinations of features provide the best performance, by selecting those features: 
 - Zone 1 ---> Temperature // TemperatureHumidity // Humidity^2 
 - Zone 2 ---> Temperature // TemperatureWindSpeed // Humidity^2 
 - Zone 3 ---> Temperature^2 // Temperature*WindSpeed
@@ -62,7 +62,7 @@ Applied the AD-Fuller algorithm to the residual component. The Time series is st
 o	1%: -3.430.
 o	5%: -2.862.
 o	10%: -2.567.
-The ADF statistic (-35.67) is significantly more negative than even the 1% critical value (-3.43), indicating strong evidence to reject the null hypothesis of a unit root. The extremely low p-value (0.000000) further confirms this conclusion, meaning there's overwhelming statistical evidence that your time series is stationary.
+<br />The ADF statistic (-35.67) is significantly more negative than even the 1% critical value (-3.43), indicating strong evidence to reject the null hypothesis of a unit root. The extremely low p-value (0.000000) further confirms this conclusion, meaning there's overwhelming statistical evidence that your time series is stationary.
 The Trend and Seasonal components are assumed to follow the same behavior. As such, the residual component is modelled with ARIMA and SARIMA models and then the predicted residual is added to the Trend and Seasonal components to reconstruct the temperature time series data. This data is then used to compare against the actual data for accuracy.  
 After training the ARIMA and SARIMA models, the results were checked against the real data. 
 The forecast() method in ARIMA and SARIMA models which is appropriate for out of sample prediction, often yields relatively constant predictions, especially for longer forecast horizons. This happens because these models have a mathematical tendency to revert to mean overtime. As the forecast horizon increases, predictions gradually converge toward the series mean. Also, these models assume stationarity after differencing. For a stationary series, the best long-term forecast is essentially a constant value. 
