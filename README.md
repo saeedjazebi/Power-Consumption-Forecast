@@ -68,9 +68,12 @@ The training and testing data are prepared for the profit model. The model is th
 For Neural Networks, two different methods are considered. 1) Using a moving window on the power consumption feature only. In this method, the input is 24 hours historical power consumption, and the output is the next 24-hour power consumption. This would predict the next 24-hour power consumption based on historical data. For this reason, three different models were trained: a) Regular neural network b) A Simple Recurrent Neural Network (RNN), c) A Long Short-Term Memory (LSTM) network. The performance of the models has been compared with respect to the RMSE.  2) Using moving windows of historical 24-hour power consumption and temperature, and predicted 24-hour temperature, as input, and the predicted future 24-hour power consumption as output. Hence, the input has 3 components, and the output has one component.  For this method, only LSTM was used. Lastly, hyperparameter tuning is performed to optimize the model parameters.
 Created a function that prepares windows of historical and future data for training and testing. Converted the data into input and output variables X, y with this function. The length of the vectors is 144 (24 hours * 6 sample per hour). The training and testing data sets are then generated. The dimensions of the data are checked so that they are correct and also, we can design an appropriate neural network for them.
 ### Method 1)
-#### a)	A regular ANN model is built, with 50 dense hidden layers, and a dense output layer with RELU activation function. After 20 Epochs the RMSE is 9555.
-#### b)	A simple RNN model is built with 50 layers, and RELU activation function, and a dense output layer. The RMSE after 20 epoch is 1363.
-#### c)	 LSTM 1: A LSTM model is built with 50 layers, RELU activation function, and a dense output layer. The RMSE after 20 epochs is 1352.
+#### a)	Regular ANN:
+A regular ANN model is built, with 50 dense hidden layers, and a dense output layer with RELU activation function. After 20 Epochs the RMSE is 9555.
+#### b)	simple RNN:
+A simple RNN model is built with 50 layers, and RELU activation function, and a dense output layer. The RMSE after 20 epoch is 1363.
+#### c)	 LSTM 1: 
+A LSTM model is built with 50 layers, RELU activation function, and a dense output layer. The RMSE after 20 epochs is 1352.
 The simple LSTM method seems to work better for the purpose of Method 1. Therefore, for method 2 only LSTM model is used.
 
 ### Method 2)
